@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import HeaderNav from './HeaderNav.js';
 export default class Header extends Component {
     render() {
         return (
@@ -11,9 +11,7 @@ export default class Header extends Component {
                         <p className="sub-heading">The Best Food Block on the Web.</p>
                     </div>
                 </div>
-                <div className="social-logos">
-                    <img src={this.props.fbIcon} alt="facebook icon" />
-                </div>
+                <HeaderNav iconArray={this.props.iconArray} />
             </header>
         );
     }
